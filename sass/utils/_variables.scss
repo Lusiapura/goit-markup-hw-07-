@@ -1,0 +1,29 @@
+$primary-text-color: #212121;
+$accent-color: #2196f3;
+$background-color: #f5f5f5;
+$title-text-color: #757575;
+$white-color: #ffffff;
+$background-button: #f5f4fa;
+$address: #ffffff99;
+$background-hero: #2f303a;
+$text-works: #2f303acc;
+$portfolio-work-gap: 30px;
+$border-card: #eeeeee;
+$border-line: #ececec;
+$icon: #afb1b8;
+$backdrop-color: #00000033;
+$form-text-color: #75757580;
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+$timing-duraction: 250ms;
+
+@mixin centered-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin fontMix($font-size, $line-height, $font-weight: 400) {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+}

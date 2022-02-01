@@ -1,0 +1,20 @@
+.logo {
+  color: $accent-color;
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  @include fontMix(26px, 1.17, 700);
+}
+
+.logo__item {
+  color: $primary-text-color;
+
+  font-family: Oleo Script, sans-serif;
+  @include fontMix(26px, 1.38, 700);
+}
+
+.logo__items {
+  color: $white-color;
+
+  font-family: Oleo Script, sans-serif;
+  @include fontMix(26px, 1.38, 700);
+}
