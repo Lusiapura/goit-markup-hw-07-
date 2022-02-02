@@ -3,13 +3,25 @@
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+
+  @media screen and (min-widht: $mobile-width) {
+    width: $mobile-width;
+  }
+
+  @media screen and (min-widht: $planshet-width) {
+    width: $planshet-width;
+  }
+
+  @media screen and (min-widht: $desctop-width) {
+    width: $desctop-width;
+  }
 }
 
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
 
-    &:nth-child(2) {
+  &:nth-child(2) {
     padding-bottom: 0px;
   }
 }

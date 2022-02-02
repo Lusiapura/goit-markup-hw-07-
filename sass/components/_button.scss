@@ -92,3 +92,27 @@
   align-items: center;
   text-align: center;
 }
+
+.button-menu {
+  display: inline-flex;
+  fill: $black-color;
+  cursor: pointer;
+  border: none;
+  background-color: $white-color;
+  padding: 0;
+  margin-top: 22px;
+  margin-bottom: 22px;
+  margin-left: 22px;
+}
+
+.button-menu__icon-closemenu {
+  display: none;
+}
+
+.button-menu.is-open .button-menu__icon-closemenu {
+  display: block;
+}
+
+.button-menu.is-open .button-menu__icon-menu {
+  display: none;
+}

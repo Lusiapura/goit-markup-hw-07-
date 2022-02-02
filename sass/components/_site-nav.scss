@@ -1,6 +1,20 @@
-.site-nav {
-  display: flex;
-  margin-left: 93px;
+@media screen and (min-widht: $mobile-width) {
+  .site-nav {
+    display: none;
+  }
+}
+
+@media screen and (min-widht: $planshet-width) {
+  .site-nav {
+    display: none;
+  }
+}
+
+@media screen and (min-widht: $desctop-width) {
+  .site-nav {
+    display: flex;
+    margin-left: 93px;
+  }
 }
 
 .site-nav__item + .site-nav__item {
