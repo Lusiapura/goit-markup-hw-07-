@@ -1,8 +1,19 @@
-.auth-nav {
-  display: flex;
-  margin-left: auto;
-  padding-top: 32px;
-  padding-bottom: 32px;
+.auth-nav.list {
+  @media screen and (min-width: 480px) {
+    max-width: 100%;
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .auth-nav__link {

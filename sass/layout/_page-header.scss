@@ -3,7 +3,9 @@
   border-bottom: 1px solid $border-line;
 }
 
-.main-nav {
-  display: flex;
-  align-items: center;
+@media screen and (min-width: 1200px) {
+  .main-nav {
+    display: flex;
+    align-items: center;
+  }
 }

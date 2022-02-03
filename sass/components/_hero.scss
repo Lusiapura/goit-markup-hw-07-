@@ -21,3 +21,17 @@
 
   @include fontMix(44px, 1.36, 900);
 }
+
+.hero {
+  @media screen and (min-widht: 320px) {
+    width: 100%;
+  }
+
+  @media screen and (min-widht: 480px) {
+    width: 100%;
+  }
+
+  @media screen and (min-widht: 768px) and (max-widht: 1200px) {
+    width: 100%;
+  }
+}
