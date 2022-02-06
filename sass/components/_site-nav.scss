@@ -1,6 +1,6 @@
 .site-nav.list {
-  @media screen and (min-width: 480px) {
-    max-width: 100%;
+  @media screen and (max-width: 767px) {
+    width: 100%;
     display: none;
   }
 

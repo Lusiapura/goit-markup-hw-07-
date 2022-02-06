@@ -1,6 +1,24 @@
-.page-header {
-  margin: 0 auto;
-  border-bottom: 1px solid $border-line;
+@media screen and (max-width: 767px) {
+  .page-header {
+    position: relative;
+    border-bottom: 1px solid $border-line;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-header {
+    margin: 0 auto;
+    border-bottom: 1px solid $border-line;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main-nav__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 60px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
