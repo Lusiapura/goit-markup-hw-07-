@@ -1,20 +1,44 @@
 .logo {
-  color: $accent-color;
-  text-decoration: none;
-  font-family: Raleway, sans-serif;
-  @include fontMix(26px, 1.17, 700);
+  @media screen and (max-width: 767px) {
+    @include fontMix(24px, 1.17, 700);
+    color: $accent-color;
+    text-decoration: none;
+    font-family: Raleway, sans-serif;
+  }
+
+  @media screen and (min-width: 1200px) {
+    color: $accent-color;
+    text-decoration: none;
+    font-family: Raleway, sans-serif;
+    @include fontMix(26px, 1.17, 700);
+  }
 }
 
 .logo__item {
+  @media screen and (max-width: 767px) {
   color: $primary-text-color;
-
   font-family: Oleo Script, sans-serif;
-  @include fontMix(26px, 1.38, 700);
+  @include fontMix(24px, 1.17, 700);
+  }
+
+  @media screen and (min-width: 1200px) { 
+    color: $primary-text-color;
+    font-family: Oleo Script, sans-serif;
+    @include fontMix(26px, 1.38, 700);
+  }
 }
 
-.logo__items {
-  color: $white-color;
 
+.logo__items {
+  @media screen and (max-width: 767px) {
+  color: $white-color;
+  font-family: Oleo Script, sans-serif;
+  @include fontMix(24px, 1.17, 700);
+  }
+
+  @media screen and (min-width: 1200px) {
+  color: $white-color;
   font-family: Oleo Script, sans-serif;
   @include fontMix(26px, 1.38, 700);
+  }
 }
