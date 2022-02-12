@@ -308,10 +308,7 @@ svg {
 
 @media screen and (max-width: 767px) {
   .button-menu {
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
+    display: block;
     fill: #000000;
     cursor: pointer;
     border: none;
@@ -319,6 +316,9 @@ svg {
     padding: 0;
     margin: 0;
   }
+  .button-menu:hover, .button-menu:focus {
+    fill: #2196f3;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -334,44 +334,44 @@ svg {
 }
 
 @media screen and (max-width: 767px) {
-  .button-menu .button-menu__icon-closemenu {
+  .button-menu .button-menu__icon-menu {
     display: none;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .button-menu .button-menu__icon-closemenu {
+  .button-menu .button-menu__icon-menu {
     display: none;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .button-menu .button-menu__icon-closemenu {
+  .button-menu .button-menu__icon-menu {
     display: none;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .button-menu.is-open .button-menu__icon-closemenu {
+  .button-menu .button-menu__icon-closemenu {
     display: block;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .button-menu.is-open .button-menu__icon-closemenu {
+  .button-menu .button-menu__icon-closemenu {
     display: none;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .button-menu.is-open .button-menu__icon-closemenu {
+  .button-menu .button-menu__icon-closemenu {
     display: none;
   }
 }
 
 @media screen and (max-width: 767px) {
   .button-menu.is-open .button-menu__icon-menu {
-    display: none;
+    display: block;
   }
 }
 
@@ -388,18 +388,21 @@ svg {
 }
 
 @media screen and (max-width: 767px) {
-  .menu-container {
+  .button-menu.is-open .button-menu__icon-closemenu {
     display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: aqua;
   }
 }
 
-.menu-container.is-open {
-  display: block;
+@media screen and (min-width: 768px) {
+  .button-menu.is-open .button-menu__icon-closemenu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .button-menu.is-open .button-menu__icon-closemenu {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -626,29 +629,57 @@ svg {
   margin-left: 10px;
 }
 
-.icon__contact-footer {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 44px;
-  height: 44px;
-  margin-top: 16px;
-  padding: 12px;
-  border: none;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
-  cursor: pointer;
-  fill: #ffffff;
-  background-color: rgba(255, 255, 255, 0.1);
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  -o-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (max-width: 767px) {
+  .icon__contact-footer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 44px;
+    height: 44px;
+    margin-top: 20px;
+    padding: 12px;
+    border: none;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    letter-spacing: 0,03em;
+    cursor: pointer;
+    fill: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+    -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .icon__contact-footer:hover, .icon__contact-footer:focus {
+    fill: #ffffff;
+    background: #2196f3;
+  }
 }
 
-.icon__contact-footer:hover, .icon__contact-footer:focus {
-  fill: #ffffff;
-  background: #2196f3;
+@media screen and (min-width: 1200px) {
+  .icon__contact-footer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 44px;
+    height: 44px;
+    margin-top: 16px;
+    padding: 12px;
+    border: none;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    cursor: pointer;
+    fill: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+    -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .icon__contact-footer:hover, .icon__contact-footer:focus {
+    fill: #ffffff;
+    background: #2196f3;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -710,6 +741,156 @@ svg {
     font-size: 26px;
     line-height: 1.38;
     font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: aqua;
+  }
+}
+
+.menu-container.is-open {
+  display: block;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  width: 480px;
+  height: 796px;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu {
+    margin-top: 48px;
+    margin-left: 40px;
+    margin-bottom: 302px;
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+    color: #212121;
+  }
+}
+
+.menu:focus, .menu:hover {
+  color: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu__item + .menu__item {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu-contacts__link-tel {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: #2196f3;
+    margin-left: 40px;
+    margin-top: 32px;
+    text-decoration: underline;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 768px) {
+  .menu-contacts__link-tel {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 1200px) {
+  .menu-contacts__link-tel {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu-contacts__link-tel .menu-contacts__link-mail {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: #757575;
+    margin-left: 40px;
+    margin-bottom: 64px;
+    text-decoration: underline;
+  }
+}
+
+.menu-contacts__link-tel .menu-contacts__link-mail:focus, .menu-contacts__link-tel .menu-contacts__link-mail:hover {
+  color: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-contacts__link-tel .menu-contacts__link-mail {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-contacts__link-tel .menu-contacts__link-mail {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu-contacts__link-tel .menu-network {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: #2196f3;
+    margin-left: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-contacts__link-tel .menu-network {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-contacts__link-tel .menu-network {
+    display: none;
   }
 }
 
@@ -1546,7 +1727,7 @@ svg {
 
 @media screen and (min-width: 1200px) {
   .contact-address__item + .contact-address__item {
-    margin-top: 30px;
+    margin-top: 9px;
   }
 }
 

@@ -19,14 +19,43 @@
         <nav class="main-nav">
               <div class="main-nav__content">
             <a href="./index.html" class="logo">Web<span class="logo__item">Studio</span></a>
-            <button type="button" class="button-menu is-open" aria-expanded="false" aria-controls="menu-container" data-button-menu>
+            <button type="button" class="button-menu is-open" aria-expanded="false" aria-controls="menu-container" data-menu-button>
                 <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-                    <use class="button-menu__icon-closemenu" href="./images/symbol-defs-2.svg#icon-closemenu"></use>
                     <use class="button-menu__icon-menu" href="./images/symbol-defs-2.svg#icon-menu"></use>
+                    <use class="button-menu__icon-closemenu" href="./images/symbol-defs-2.svg#icon-closemenu"></use>
                 </svg>
             </button>
             </div>
             <div class="menu-container is-open" id="menu-container" data-menu>
+                <ul class="menu list">
+                    <li class="menu__item"><a href="./index.html" class="menu__link current">Студия</a></li>
+                    <li class="menu__item"><a href="./portfolio.html" class="menu__link">Портфолио</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
+                </ul>
+                <ul class="menu-contacts list">
+                    <li class="menu-contacts__item link">
+                        <a href="tel:+380961111111" class="menu-contacts__link-tel">+38 096 111 11 11</a>
+                    </li>
+                    <li class="menu-contacts__item link">
+                        <a href="mainto:info@devstudio.com" class="menu-contacts__link-mail">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="menu-network list">
+                    <li class="menu-network__item link">
+                        <a href="" class="menu-network__link">Instagram | </a>
+                    </li>
+                    <li class="menu-network__item link">
+                        <a href="" class="menu-network__link">Twitter | </a>
+                    </li>
+                    <li class="menu-network__item link">
+                        <a href="" class="menu-network__link">Facebook | </a>
+                    </li>
+                    <li class="menu-network__item link">
+                        <a href="" class="menu-network__link">LinkedIn</a>
+                    </li>
+                </ul>
+
+    
 
             </div>
             <ul class="site-nav list">

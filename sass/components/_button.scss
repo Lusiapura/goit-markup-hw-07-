@@ -114,13 +114,18 @@
 
 .button-menu {
   @media screen and (max-width: 767px) {
-    display: inline-flex;
+    display: block;
     fill: $black-color;
     cursor: pointer;
     border: none;
     background-color: $white-color;
     padding: 0;
     margin: 0;
+     
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+    }
   }
 
   @media screen and (min-width: 768px) {
@@ -132,7 +137,7 @@
   }
 }
 
-.button-menu .button-menu__icon-closemenu {
+.button-menu .button-menu__icon-menu {
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -146,7 +151,7 @@
   }
 }
 
-.button-menu.is-open .button-menu__icon-closemenu {
+.button-menu .button-menu__icon-closemenu {
   @media screen and (max-width: 767px) {
     display: block;
   }
@@ -162,7 +167,7 @@
 
 .button-menu.is-open .button-menu__icon-menu {
   @media screen and (max-width: 767px) {
-    display: none;
+    display: block;
   }
 
   @media screen and (min-width: 768px) {
@@ -174,16 +179,16 @@
   }
 }
 
-.menu-container {
+.button-menu.is-open .button-menu__icon-closemenu {
   @media screen and (max-width: 767px) {
     display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: aqua;
   }
-  &.is-open {
-    display: block;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: none;
   }
 }

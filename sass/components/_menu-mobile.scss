@@ -1,0 +1,128 @@
+.menu-container {
+    @media screen and (max-width: 767px) {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: aqua;
+    }
+    &.is-open {
+      display: block;
+      background-color: $white-color;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+      width: 480px;
+      height: 796px;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+      }
+    
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
+  }
+
+  .menu {
+    @media screen and (max-width: 767px) {
+        margin-top: 48px;
+        margin-left: 40px;
+        margin-bottom: 302px;
+        text-decoration: underline;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.18;
+        letter-spacing: 0.02em;
+        cursor: pointer;
+        color: $primary-text-color;
+    }
+
+    &:focus,
+    &:hover {
+      color: $accent-color;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+      }
+    
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
+  }
+
+.menu__item + .menu__item {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 32px;
+    }
+
+ }
+ 
+ .menu-contacts__link-tel {
+    @media screen and (max-width: 767px) {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: $accent-color;
+    margin-left: 40px;
+    margin-top: 32px;
+    text-decoration: underline;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+      }
+    
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
+  }
+
+  .menu-contacts__link-mail {
+    @media screen and (max-width: 767px) {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: $title-text-color; 
+    margin-left: 40px;
+    margin-bottom: 64px;
+    text-decoration: underline;
+    }
+
+    &:focus,
+    &:hover {
+      color: $accent-color;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+      }
+    
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
+  }
+
+  .menu-network {
+    @media screen and (max-width: 767px) {
+        display: flex;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: 0.02em;
+        color: $accent-color;
+        margin-left: 40px;
+    }
+
+
+    @media screen and (min-width: 768px) {
+        display: none;
+      }
+    
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
+  }
+}
