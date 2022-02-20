@@ -2,17 +2,32 @@
     @media screen and (max-width: 767px) {
       display: none;
       position: absolute;
-      top: 100%;
+      top: 0;
       left: 0;
-      width: 100%;
-      background-color: aqua;
+      width: 100vw;
+      background-color: $white-color;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+      height: 100vh;
+      z-index: 1;
     }
     &.is-open {
       display: block;
-      background-color: $white-color;
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-      width: 480px;
-      height: 796px;
+      overflow-y: scroll;
+    }
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      }
+    
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
+  }
+
+  .navigation {
+    @media screen and (max-width: 767px) {
+        margin: 40px 48px;
     }
 
     @media screen and (min-width: 768px) {
@@ -24,105 +39,73 @@
     }
   }
 
-  .menu {
-    @media screen and (max-width: 767px) {
-        margin-top: 48px;
-        margin-left: 40px;
-        margin-bottom: 302px;
-        text-decoration: underline;
-        font-weight: 500;
-        font-size: 40px;
-        line-height: 1.18;
-        letter-spacing: 0.02em;
-        cursor: pointer;
-        color: $primary-text-color;
-    }
+.menu__item:nth-child(-n+2) {
+  margin-bottom: 32px;
+}
 
-    &:focus,
-    &:hover {
-      color: $accent-color;
-    }
+.contacts {
+  margin-top: 302px;
+}
 
-    @media screen and (min-width: 768px) {
-        display: none;
-      }
-    
-    @media screen and (min-width: 1200px) {
-        display: none;
-    }
-  }
+.menu__link {
+  @include fontMix(40px, 1.18, 500);
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  cursor: pointer;
+  color: $primary-text-color;
 
-.menu__item + .menu__item {
-  @media screen and (max-width: 767px) {
-    margin-bottom: 32px;
-    }
-
- }
- 
- .menu-contacts__link-tel {
-    @media screen and (max-width: 767px) {
-    font-weight: 500;
-    font-size: 34px;
-    line-height: 1.18;
-    letter-spacing: 0.02em;
+  &:hover,
+  &:focus {
     color: $accent-color;
-    margin-left: 40px;
-    margin-top: 32px;
-    text-decoration: underline;
-
-    @media screen and (min-width: 768px) {
-        display: none;
-      }
-    
-    @media screen and (min-width: 1200px) {
-        display: none;
-    }
-  }
-
-  .menu-contacts__link-mail {
-    @media screen and (max-width: 767px) {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 1.17;
-    letter-spacing: 0.02em;
-    color: $title-text-color; 
-    margin-left: 40px;
-    margin-bottom: 64px;
-    text-decoration: underline;
-    }
-
-    &:focus,
-    &:hover {
-      color: $accent-color;
-    }
-
-    @media screen and (min-width: 768px) {
-        display: none;
-      }
-    
-    @media screen and (min-width: 1200px) {
-        display: none;
-    }
-  }
-
-  .menu-network {
-    @media screen and (max-width: 767px) {
-        display: flex;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 1.22;
-        letter-spacing: 0.02em;
-        color: $accent-color;
-        margin-left: 40px;
-    }
-
-
-    @media screen and (min-width: 768px) {
-        display: none;
-      }
-    
-    @media screen and (min-width: 1200px) {
-        display: none;
-    }
   }
 }
+
+.menu__link.current {
+  color: $accent-color;
+}
+
+.menu-contacts__link-tel {
+  @include fontMix(34px, 1.18, 500);
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  cursor: pointer;
+  color: $accent-color;
+  margin-bottom: 32px;
+  display: block;
+}
+
+.menu-contacts__link-mail {
+  @include fontMix(24px, 1.17, 500);
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  cursor: pointer;
+  color: $title-text-color;
+  padding: 0;
+} 
+
+.menu-network {
+  display: flex;
+  margin-top: 64px;
+}
+
+.menu-network__link {
+  display: flex;
+  text-decoration: none;
+  cursor: pointer;
+  @include fontMix(18px, 1.22, 500);
+  color: $accent-color;
+  margin-right: 10px;
+}  
+
+.menu-network__item:not(:last-child) {
+    ::after {
+      content: '';
+      display: inline-flex;
+      width: 1px;
+      height: 22px;
+      margin: 0;
+      overflow: hidden;
+      margin-left: 10px;
+      border-right: 1px solid #21212133;
+  }
+}  
