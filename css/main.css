@@ -53,6 +53,10 @@ body {
   letter-spacing: 0.42px;
 }
 
+.body.modal-open {
+  overflow: hidden;
+}
+
 .list {
   padding: 0px;
   margin: 0px;
@@ -897,6 +901,12 @@ svg {
   background-color: #00000033;
 }
 
+@media screen and (max-width: 767px) {
+  .backdrop {
+    overflow-y: scroll;
+  }
+}
+
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -928,6 +938,13 @@ svg {
   -webkit-transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1), translate 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   -o-transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1), translate 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1), translate 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 767px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
 }
 
 .modal__text {
@@ -1055,6 +1072,15 @@ svg {
   padding-left: 36px;
   margin-top: 20px;
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .form-field__label-check {
+    font-size: 12px;
+    line-height: 1.17;
+    font-weight: 400;
+    padding-left: 24px;
+  }
 }
 
 .form-field__check-contract {

@@ -10,6 +10,10 @@ body {
   letter-spacing: 0.42px;
 }
 
+.body.modal-open {
+  overflow: hidden;
+}
+
 .list {
   padding: 0px;
   margin: 0px;
