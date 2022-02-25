@@ -215,9 +215,17 @@
 }
 
 .section-button {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 40px;
+    display: flex;
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+  }
 }
 
 .section-button__item + .section-button__item {

@@ -5,7 +5,9 @@
   }
 
   @media screen and (min-width: 768px) {
-    display: none;
+    display: flex;
+    align-items: center;
+    margin-left: 93px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -40,6 +42,7 @@
       color: $accent-color;
     }
   }
+}
 
   .site-nav__link.current {
     @media screen and (min-width: 1200px) {
@@ -59,4 +62,3 @@
       }
     }
   }
-}
