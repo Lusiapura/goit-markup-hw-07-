@@ -216,9 +216,10 @@
 
 .section-button {
   @media screen and (max-width: 767px) {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+    max-width: 450px;
     display: flex;
-    margin-top: 60px;
+    flex-wrap: wrap;
   }
 
   @media screen and (min-width: 1200px) {
