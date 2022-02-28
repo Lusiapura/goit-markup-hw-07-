@@ -9,6 +9,16 @@
     text-align: center;
   }
 
+  @media screen and (min-width: 768px) {
+    margin-top: 0px;
+    margin-bottom: 30px;
+  
+    color: $primary-text-color;
+  
+    @include fontMix(28px, 1.17, 700);
+    text-align: center;
+  }
+
   @media screen and (min-width: 1200px) {
     margin-top: 0px;
     margin-bottom: 50px;
@@ -22,6 +32,10 @@
 
 .doing {
   @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
     display: none;
   }
 }
@@ -44,6 +58,10 @@
     max-width: 450px;
   }
 
+  @media screen and (min-width: 768px) {
+    max-width: 354px;
+  }
+
   @media screen and (min-width: 1200px) {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -56,6 +74,12 @@
     width: 450px;
   }
 
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 768px;
+  }  
+
   @media screen and (min-width: 1200px) {
     display: flex;
   }
@@ -67,13 +91,30 @@
     width: 450px;
   }
 
+  @media screen and (min-width: 768px) {
+    display: block;
+
+  }  
+
   @media screen and (min-width: 1200px) {
     display: block;
   }
 }
 
 .section-feature__item + .section-feature__item {
-  @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
+    margin-left: 30px;
+  }
+}
+
+.section-feature__item:nth-child(-n+2) {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+}  
+
+.section-feature__item:nth-child(even) {
+  @media screen and (min-width: 768px) {
     margin-left: 30px;
   }
 }
@@ -84,6 +125,16 @@
     margin-bottom: 30px;
     height: 120px;
     width: 450px;
+    border-radius: 4px;
+    background-color: $background-button;
+    fill: $primary-text-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    @include centered-content;
+    margin-bottom: 30px;
+    height: 120px;
+    width: 354px;
     border-radius: 4px;
     background-color: $background-button;
     fill: $primary-text-color;
@@ -105,12 +156,20 @@
     display: none;
   }
 
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+
   @media screen and (min-width: 1200px) {
     display: flex;
   }
 }
 
 .section-works__item + .section-works__item {
+  @media screen and (min-width: 768px) {
+    margin-left: 30px;
+  }
+
   @media screen and (min-width: 1200px) {
     margin-left: 30px;
   }
