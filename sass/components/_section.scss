@@ -82,6 +82,7 @@
 
   @media screen and (min-width: 1200px) {
     display: flex;
+    flex-wrap: nowrap;
   }
 }
 
@@ -219,9 +220,17 @@
     text-align: center;
   }
 
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
   @media screen and (min-width: 1200px) {
     width: 100%;
     display: flex;
+    flex-wrap: nowrap;
     text-align: center;
   }
 }
@@ -237,7 +246,17 @@
     border: 1px solid $border-card;
   }
 
+  @media screen and (min-width: 768px) {
+    align-items: center;
+    background-color: $white-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    border: 1px solid $border-card;
+  }
+
   @media screen and (min-width: 1200px) {
+    margin-bottom: 0px;
     background-color: $white-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -252,25 +271,86 @@
   }
 }
 
+.section-team__item:nth-last-child(odd) {
+  @media screen and (min-width: 768px) {
+    margin-left: 30px;
+  }
+}
+
+.section-team__item:nth-child(-n+2) {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0px;
+  }
+}
+
+
 .section-team img {
   @media screen and (max-width: 767px) {
     width: 450px;
   }
+
+  @media screen and (min-width: 768px) {
+    width: 352px;
+  }
 }
 
 .card-box {
+  @media screen and (max-width: 767px) {
   padding-top: 30px;
   padding-bottom: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+  padding-top: 30px;
+  padding-bottom: 24px;
+    }
+
+  @media screen and (min-width: 1200px) {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  }    
 }
 
 .card-box__title {
+  @media screen and (max-width: 767px) {
   color: $primary-text-color;
   @include fontMix(16px, 1.17, 500);
+  }
+
+  @media screen and (min-width: 768px) {
+  color: $primary-text-color;
+  @include fontMix(16px, 1.17, 500);
+  margin-top: 0px;
+  margin-bottom: 0px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    color: $primary-text-color;
+    @include fontMix(16px, 1.17, 500);
+    }
 }
 
 .card-box__text {
+  @media screen and (max-width: 767px) {
   color: $title-text-color;
   @include fontMix(16px, 1.17);
+  }
+
+  @media screen and (min-width: 768px) {
+  color: $title-text-color;
+  @include fontMix(16px, 1.17);
+  margin-bottom: 16px;
+  margin-top: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+  color: $title-text-color;
+  @include fontMix(16px, 1.17);
+  }    
 }
 
 .section-button {
