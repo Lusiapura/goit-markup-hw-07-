@@ -285,6 +285,35 @@ svg {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .button-second {
+    display: inline-block;
+    -webkit-border-radius: 4px;
+            border-radius: 4px;
+    padding: 6px 22px;
+    border: 0px solid transparent;
+    color: #212121;
+    background-color: #f5f4fa;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.63;
+    font-weight: 500;
+    text-align: center;
+    -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .button-second:hover, .button-second:focus {
+    -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    color: #ffffff;
+    background-color: #2196f3;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .button-second {
     display: inline-block;
@@ -997,7 +1026,7 @@ svg {
     display: flex;
     width: 44px;
     height: 44px;
-    margin-top: 16px;
+    margin-top: 20px;
     padding: 12px;
     border: none;
     -webkit-border-radius: 50%;
@@ -1562,9 +1591,31 @@ svg {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio img {
+    width: 354px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .portfolio-work {
     display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-work {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    margin-left: -webkit-calc(-1 * 30px);
+    margin-left: calc(-1 * 30px);
+    margin-top: -webkit-calc(-1 * 30px);
+    margin-top: calc(-1 * 30px);
   }
 }
 
@@ -1586,6 +1637,16 @@ svg {
 
 @media screen and (max-width: 767px) {
   .portfolio-work > .portfolio-work__item {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-work > .portfolio-work__item {
+    -webkit-flex-basis: -webkit-calc(768px / 2 - 30px);
+        -ms-flex-preferred-size: calc(768px / 2 - 30px);
+            flex-basis: calc(768px / 2 - 30px);
+    margin-left: 30px;
     margin-top: 30px;
   }
 }
@@ -1678,6 +1739,21 @@ svg {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio {
+    text-decoration: none;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #eeeeee;
+    -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .portfolio {
     text-decoration: none;
@@ -1747,6 +1823,12 @@ svg {
 @media screen and (min-width: 768px) {
   .doing {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .doing {
+    display: block;
   }
 }
 
@@ -2216,6 +2298,20 @@ svg {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .section-button {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 50px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .section-button {
     display: -webkit-box;
@@ -2321,7 +2417,6 @@ svg {
 
 @media screen and (max-width: 767px) {
   .footer {
-    height: 603px;
     border: #2f303a;
     background-color: #2f303a;
     color: #ffffff;
@@ -2337,7 +2432,6 @@ svg {
 
 @media screen and (min-width: 768px) {
   .footer {
-    height: 463px;
     border: #2f303a;
     background-color: #2f303a;
     color: #ffffff;
@@ -2353,7 +2447,6 @@ svg {
 
 @media screen and (min-width: 1200px) {
   .footer {
-    height: 252px;
     border: #2f303a;
     background-color: #2f303a;
     color: #ffffff;
@@ -2422,6 +2515,10 @@ svg {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
@@ -2481,7 +2578,6 @@ svg {
   .contact-address {
     margin: 0 auto;
     text-align: center;
-    width: 232px;
     margin-bottom: 60px;
     margin-top: 20px;
   }
@@ -2492,6 +2588,7 @@ svg {
     text-align: center;
     margin-bottom: 60px;
     margin-top: 20px;
+    width: 231px;
   }
 }
 
@@ -2499,6 +2596,7 @@ svg {
   .contact-address {
     text-align: left;
     margin-top: 20px;
+    margin-bottom: 0px;
     width: 231px;
   }
 }
@@ -2520,6 +2618,18 @@ svg {
 @media screen and (min-width: 1200px) {
   .footer-logo {
     text-align: left;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contact-address__item + .contact-address__item {
+    margin-top: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact-address__item + .contact-address__item {
+    margin-top: 8px;
   }
 }
 
@@ -2548,7 +2658,6 @@ svg {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: initial;
   }
 }
 
@@ -2570,6 +2679,8 @@ svg {
 @media screen and (min-width: 768px) {
   .sotial__text,
   .input__text {
+    margin-top: 0px;
+    margin-bottom: 0px;
     text-align: center;
     color: #ffffff;
     font-size: 14px;
@@ -2583,6 +2694,8 @@ svg {
 @media screen and (min-width: 1200px) {
   .sotial__text,
   .input__text {
+    margin-top: 0px;
+    margin-bottom: 0px;
     display: block;
     text-align: left;
     color: #ffffff;
@@ -2634,7 +2747,7 @@ svg {
     height: 80px;
     margin-left: 70px;
     margin-top: 12px;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
   }
 }
 
@@ -2695,7 +2808,7 @@ svg {
         -ms-flex-pack: center;
             justify-content: center;
     margin-top: 60px;
-    margin-bottom: 34px;
+    margin-bottom: 70px;
     height: 86px;
   }
 }
@@ -2714,6 +2827,7 @@ svg {
         -ms-flex-pack: center;
             justify-content: center;
     margin: 0 auto;
+    margin-bottom: 70px;
     height: 86px;
     width: 450px;
   }
@@ -2727,7 +2841,6 @@ svg {
             justify-content: left;
     margin-left: 93px;
     margin-top: 12px;
-    margin-bottom: 34px;
     height: 86px;
     width: 570px;
   }

@@ -38,6 +38,10 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }  
 }
 
 .section-feature__title {
@@ -359,6 +363,12 @@
     max-width: 450px;
     display: flex;
     flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 768px) {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
   }
 
   @media screen and (min-width: 1200px) {
