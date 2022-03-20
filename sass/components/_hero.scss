@@ -9,11 +9,19 @@
     padding-bottom: 118px;
     background-color: $background-hero;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/Imghero.jpg);
+      url('/images/Hero/Heromobile.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+      url('/images/Hero/Heromobile@2x.jpg');
+    }
   }
+
 
   @media screen and (min-width: 768px) {
     width: 100%;
@@ -25,10 +33,17 @@
     padding-bottom: 118px;
     background-color: $background-hero;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/Imghero.jpg);
+      url('/images/Hero/Herotabletka.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+     url('/images/Hero/Herotabletka@2x.jpg');
+    }
   }
 
   @media screen and (min-width: 1200px) {
@@ -41,11 +56,18 @@
     padding-bottom: 200px;
     background-color: $background-hero;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/Imghero.jpg);
+      url('/images/Hero/Herodesktop.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-  }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+       url('/images/Hero/Herodesktop@2x.jpg');
+    }
+  }  
 }
 
 .hero__title {
@@ -71,19 +93,5 @@
     color: $white-color;
 
     @include fontMix(44px, 1.36, 900);
-  }
-}
-
-.hero {
-  @media screen and (max-width: 767px) {
-    width: 100%;
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 100%;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 100%;
   }
 }
