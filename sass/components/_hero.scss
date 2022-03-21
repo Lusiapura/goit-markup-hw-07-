@@ -9,7 +9,7 @@
     padding-bottom: 118px;
     background-color: $background-hero;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('/images/Hero/Heromobile.jpg');
+      url('../images/Hero/Heromobile.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -18,7 +18,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
-      url('/images/Hero/Heromobile@2x.jpg');
+      url('../images/Hero/Heromobile@2x.jpg');
     }
   }
 
@@ -33,7 +33,7 @@
     padding-bottom: 118px;
     background-color: $background-hero;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('/images/Hero/Herotabletka.jpg');
+      url('../images/Hero/Herotabletka.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -42,7 +42,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
-     url('/images/Hero/Herotabletka@2x.jpg');
+     url('../images/Hero/Herotabletka@2x.jpg');
     }
   }
 
@@ -56,7 +56,7 @@
     padding-bottom: 200px;
     background-color: $background-hero;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('/images/Hero/Herodesktop.jpg');
+      url('../images/Hero/Herodesktop.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -65,7 +65,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-       url('/images/Hero/Herodesktop@2x.jpg');
+       url('../images/Hero/Herodesktop@2x.jpg');
     }
   }  
 }
